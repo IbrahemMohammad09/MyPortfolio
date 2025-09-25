@@ -121,4 +121,62 @@ export const JOURNEY_STEPS = [
     },
 ]
 
-export const PASSIONS = []
+export const PASSIONS = [
+    {
+        icon: Heart,
+        title: "User Experience",
+        description: "lorem lorem lorem lorem lorem lorem lorem lorem lorem "
+    },
+    {
+        icon: Coffee,
+        title: "Problem Solving",
+        description: "lorem lorem lorem lorem lorem lorem lorem lorem lorem "
+    },
+    {
+        icon: BookOpen,
+        title: "Continuous Learing",
+        description: "lorem lorem lorem lorem lorem lorem lorem lorem lorem "
+    },
+]
+
+export const SOCIAL_LINKS =[
+    {
+        name: "GitHub",
+        icon: FiGithub,
+        url: "#",
+        color: "hover:text-gray-400",
+        bgColor: "hover:bg-gray-800",
+    },
+    {
+        name: "LinkedIn",
+        icon: FiLinkedin,
+        url: "#",
+        color: "hover:text-blue-400",
+        bgColor: "hover:bg-blue-500/10",
+    },
+    {
+        name: "Email",
+        icon: Mail,
+        url: "Mailto:@@@@",
+        color: "hover:text-green-400",
+        bgColor: "hover:bg-gree-500/10",
+    }
+]
+
+export const CONTACT_INFO = [
+    {
+        icon: MapPin,
+        label: "Location",
+        value: "Erbil"
+    },
+    {
+        icon: Mail,
+        label: "Email",
+        value: "@@@@@@@@@@"
+    },
+    {
+        icon: Phone,
+        label: "Phone",
+        value: "000000"
+    }
+]
