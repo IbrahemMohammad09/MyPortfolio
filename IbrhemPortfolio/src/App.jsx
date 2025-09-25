@@ -1,8 +1,15 @@
 import React from 'react'
+import { ThemeProvider } from './context/ThemeContext'
+import Navbar from './components/Navbar'
 
 const App = () => {
   return (
-    <div className='text-5xl'>App</div>
+      <ThemeProvider>
+        <div>
+          <Navbar />
+        </div>
+      </ThemeProvider>
+
   )
 }
 
