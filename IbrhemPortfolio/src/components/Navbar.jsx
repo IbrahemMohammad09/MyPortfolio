@@ -31,35 +31,70 @@ const Navbar = () => {
       style={{ opacity: 1 }}
       className={`fixed top-0 w-full z-50 px-6 py-4 ${isDarkMode ? "bg-gray-950/80" : "bg-gray-50/80"} backdrop-blur-md border-b ${isDarkMode ? "border-gray-800" : "border-gray-200"}`}
     >
-      <div className=''>
+      <div className='max-w-7xl mx-auto flex items-center justify-between'>
         <motion.div
           whileHover={{scale: 1.05}}
-          className=''
+          className='flex items-center space-x-2'
         >
-          <Code2 size={24} className=''/>{" "}
-          <span className=''>Ibrahem Mohammad </span>
-        </motion.div>
-      </div>
-
-      {/* Desktop Nav */}
-      <div className=''>
-        {["Home","Skills","Work","About","Contact"].map((item) => (
-          <motion.button
-            key={item}
-            whileHover={{ y: -2}}
-            onClick={() => scrollToSection(item.toLowerCase())}
-            className={`text-sm uppercase traking-wider transition-colors ${
-              isDarkMode 
+          <Code2 size={24} className='text-blue-500'/>{" "}
+          <span 
+            className={`text-lg ml-1 
+${
+              isDarkMode
                 ? "text-gray-400 hover:text-white"
                 : "text-gray-600 hover:text-gray-900"
             }`}
-          >
-            {item}
+          >Ibrahem Mohammad </span>
+        </motion.div>
+
+        {/* Desktop Nav */}
+        <div className='hidden md:flex items-center space-x-8'>
+          {["Home","Skills","Work","About","Contact"].map((item) => (
+            <motion.button
+              key={item}
+              whileHover={{ y: -2}}
+              onClick={() => scrollToSection(item.toLowerCase())}
+              className={`text-sm uppercase traking-wider transition-colors ${
+                isDarkMode 
+                  ? "text-gray-400 hover:text-white"
+                  : "text-gray-600 hover:text-gray-900"
+              }`}
+            >
+              {item}
+            </motion.button>
+          ))}
+
+          <motion.button
+            whileHover={{ scale: 1.05}}
+            whileTap={{ scale: 0.95}}
+            onClick={() => toggleDarkMode(isDarkMode ? "light" : "dark")}
+            className={`p-2 rounded-full transition-colors${
+              isDarkMode 
+                ? "text-gray-400 text-white hover:bg-gray-800"  
+                : "text-gray-600 hover:text-gray-900 hover:bg-gray-200"
+            }`}
+            >
+              {isDarkMode ? <Sun size={18}/> : <Moon size={18}/>}
           </motion.button>
-        ))};
+        </div>      
       </div>
 
 
+      {/* Moblie Menu */}
+      <AnimatePresence>
+        {isMenuOpen && (
+            <motion.div
+              initial={{ opacity: 0, y: -20}}
+              animate={{ opacity: 1, y: 0}}
+              exit={{ opacity: 0, y: -20}}
+              className={`md:hidden mt-4 p-4 rounded-lg ${
+                isDarkMode ? "bg-gray-900" : "bg-white"
+              } `}
+            >
+
+            </motion.div>
+        )}
+      </AnimatePresence>
     </motion.nav>
   )
 }
