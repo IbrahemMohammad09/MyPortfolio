@@ -9,6 +9,7 @@ const App = () => {
         <div>
           <Navbar />
           <HeroSections />
+          
         </div>
       </ThemeProvider>
 
