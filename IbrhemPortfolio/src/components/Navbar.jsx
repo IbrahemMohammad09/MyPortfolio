@@ -74,7 +74,7 @@ const Navbar = () => {
             whileHover={{ scale: 1.05}}
             whileTap={{ scale: 0.95}}
             onClick={() => toggleDarkMode(isDarkMode ? "light" : "dark")}
-            className={`p-2 rounded-full transition-colors${
+            className={`p-2 rounded-full transition-colors ${
               isDarkMode 
                 ? "text-gray-400 text-white hover:bg-gray-800"  
                 : "text-gray-600 hover:text-gray-900 hover:bg-gray-200"

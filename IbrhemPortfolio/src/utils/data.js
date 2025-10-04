@@ -40,8 +40,8 @@ export const SKILLS_CATEGORY = [
         ]
     },
     {
-        title: 'FrontEnd',
-        icon: Code2,
+        title: 'BcakEnd',
+        icon: Server,
         description : "Crafting beautiful , responsive user interfaces",
         skills : [
             { name: "React", level: 95, color: "bg-blue-500" },
