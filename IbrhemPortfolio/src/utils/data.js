@@ -100,6 +100,18 @@ export const PROJECTS = [
         featured: false,
         category: "Full Stack",
     },
+    {
+        id: 3,
+        title: "E-Commerce Platform",
+        description:
+            "lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem ",
+        image: PROJECT1,
+        tags: ["react", "Tailwind", "Farmer motion"],
+        liveUrl: "#",
+        githubUrl: "#",
+        featured: false,
+        category: "Full Stack",
+    },
 ]
 
 export const JOURNEY_STEPS = [
