@@ -85,7 +85,7 @@ export const PROJECTS = [
         tags: ["react", "Tailwind", "Farmer motion"],
         liveUrl: "#",
         githubUrl: "#",
-        featured: false,
+        featured: true,
         category: "Full Stack",
     },
     {
