@@ -90,8 +90,8 @@ const ProjectCard = ({project, index, isDarkMode}) => {
       </div>
 
       {/* Project Conten */}
-      <div className="">
-        <h3 className="">
+      <div className="p-6">
+        <h3 className="text-xl font-medium mb-3 group-hover:text-blue-500 transitions-colors">
             {project.title}
         </h3>
 
@@ -104,7 +104,7 @@ const ProjectCard = ({project, index, isDarkMode}) => {
         </p>
 
         {/* Tech Stack Tags */}
-        <div className="">
+        <div className="flex flex-wrap gap-2">
           {project.tags.map((tag, index) => (
             <span
               key={index}
@@ -119,6 +119,7 @@ const ProjectCard = ({project, index, isDarkMode}) => {
           ))}
         </div>
       </div>
+      
     </div>
   </motion.div>
 }
