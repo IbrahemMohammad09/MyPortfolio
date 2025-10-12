@@ -38,9 +38,10 @@ const SuccessModel = ({ showSuccess, setShowSuccess, isDarkMode }) => {
           <motion.div
             initial={{ scale: 0 }}
             animate={{ scale: 1 }}
-            
+            transition={{ delay: 0.2, type: "spring"}}
+            className=""
           >
-
+            <CheckCircle size={32} className="" />
           </motion.div>
         </motion.div>
       </motion.div>
