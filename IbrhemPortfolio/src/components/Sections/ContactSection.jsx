@@ -10,6 +10,7 @@ import { useTheme } from "../../context/ThemeContext"
 import { CONTACT_INFO, SOCIAL_LINKS } from "../../utils/data"
 import { containerVariants, itemVariants } from "../../utils/helper"
 import TextInput from "../Input/textInput"
+import SuccessModel from "../SuccessModel"
 
 const ContactSection = () => {
   const { isDarkMode } = useTheme();
@@ -139,16 +140,17 @@ const ContactSection = () => {
                   <TextInput
                     isDarkMode={isDarkMode}
                     label="Email Address"
-                    value={formData.name}
+                    value={formData.email}
                     handleInputChange={(text) =>
                       handleInputChange('email', text)
                     }
                   />
                 </div>
+
                 <TextInput
                     isDarkMode={isDarkMode}
                     label="Your Message"
-                    value={formData.name}
+                    value={formData.message}
                     textarea
                     handleInputChange={(text) =>
                       handleInputChange('message', text)
@@ -159,7 +161,8 @@ const ContactSection = () => {
                     disabled={isSubmitting}
                     whileHover={{ y: -2, scale: 1.02}}
                     whileTap={{ scale: 0.98 }}
-                    className="w-full bg-blue-500 hover:bg-blue-600 disable:bg-blue-400 text-white py-4 rounded-xl text-sm uppercase tracking-wider font-medium trasnsition-all duration-300 flex items-center justify-center space-x-2"
+                    className="w-full bg-blue-500 hover:bg-blue-600 disabled:bg-blue-400 text-white py-4 rounded-xl text-sm uppercase 
+                      tracking-wider font-medium transition-all duration-300 flex items-center justify-center space-x-2 "
                     onClick={handleSubmit}
                   >
                     {isSubmitting ?(
@@ -172,9 +175,8 @@ const ContactSection = () => {
                             ease: "linear"
                           }}
                           className="w-4 h-4 border-2 border-white border-t-transparent rounded-full"
-                        >
+                        />
                           <span>Sending...</span>
-                        </motion.div>
                       </>
                     ) : (
                       <>
@@ -192,7 +194,12 @@ const ContactSection = () => {
       </div>
       
 
-
+  <SuccessModel 
+    // showSuccess={showSuccess} 
+    showSuccess={true} 
+    setShowSuccess={setShowSuccess} 
+    isDarkMode={isDarkMode}
+  />
   </section>
 }
 
