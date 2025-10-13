@@ -6,17 +6,19 @@ import SkillsSections from './components/Sections/SkillsSections'
 import ProjectsSections from './components/Sections/ProjectsSections'
 import AboutSections from './components/Sections/AboutSections'
 import ContactSection from './components/Sections/ContactSection'
+import Footer from './components/Sections/Footer'
 
 const App = () => {
   return (
       <ThemeProvider>
-        <div className='pb-[100vh]'>
+        <div>
           <Navbar />
           <HeroSections />
           <SkillsSections />
           <ProjectsSections />
           <AboutSections />
           <ContactSection />
+          <Footer />
         </div>
       </ThemeProvider>
 

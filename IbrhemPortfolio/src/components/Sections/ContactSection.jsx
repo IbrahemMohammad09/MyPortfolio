@@ -319,10 +319,8 @@ const ContactSection = () => {
             </motion.button>
           </motion.div>
         </motion.div>
-
       </div>
       
-
       <SuccessModel 
         showSuccess={showSuccess} 
         setShowSuccess={setShowSuccess} 
