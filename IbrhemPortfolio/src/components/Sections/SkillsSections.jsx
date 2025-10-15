@@ -42,12 +42,12 @@ const SkillsSections = () => {
     {/* Background Elements */}
     <motion.div style={{ y }} className="absolute inset-0 overflow-hidden">
         <div
-            className={`absolute top-40 right-1/4 w-72 h-72 rounded-full blur-3xl opacity-5 ${
+            className={`absolute top-40 right-1/4 w-72 h-72 rounded-full blur-3xl opacity-15 ${
                 isDarkMode ? "bg-blue-500" : "bg-blue-400"
             }`}
         />
         <div 
-            className={`absolute bottom-40 left-1/4 w-64 h-64 rounded-full  blur-3xl opacity-5 ${
+            className={`absolute bottom-40 left-1/4 w-64 h-64 rounded-full  blur-3xl opacity-15 ${
                 isDarkMode ? "bg-purple-500" : "bg-purple-400"
             }`}
         />

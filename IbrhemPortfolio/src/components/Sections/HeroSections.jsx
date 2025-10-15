@@ -96,7 +96,6 @@ const HeroSections = () => {
                         isDarkMode ? "bg-purple-500" : "bg-purple-400"
                     }`}
                 />
-            
 
                 <div className="max-w-7xl mx-auto w-full z-10 mt-20">
                     {/* Mobile Layout - Centered */}
@@ -142,7 +141,7 @@ const HeroSections = () => {
                                     isDarkMode ? "text-gray-500" : "text-gray-600"
                                 } mb-4`}
                             >
-                                Full Stack Developer
+                                {/* Full Stack Developer */}
                             </motion.div>
                             <motion.h1
                                 variants={itemVariants}
@@ -193,7 +192,7 @@ const HeroSections = () => {
                                         isDarkMode 
                                             ? "border-gray-700 hover:border-gray-600 text-gray-300"
                                             : "border-gray-300 hover:border-gray-400 text-gray-700"
-                                    }px-8 py-3 rounded-full text-sm uppercase tracking-wider font-medium transition-all duration-300`}
+                                    } px-8 py-3 rounded-full text-sm uppercase tracking-wider font-medium transition-all duration-300`}
                                 >
                                     Get in Touch
                                 </motion.button>
@@ -205,13 +204,14 @@ const HeroSections = () => {
                                 className="flex justify-center space-x-6 mb-8"
                             >
                                 {[
-                                    {icon: FiGithub , href: "#"},
-                                    {icon: FiLinkedin , href: "#"},
-                                    {icon: Mail, href: "#"},
+                                    { icon: FiGithub, href: "https://github.com/IbrahemMohammad09" },
+                                    { icon: FiLinkedin, href: "https://www.linkedin.com/in/ibrahem-mohamad/" },
+                                    { icon: Mail, href: "mailto:ibrahem.a.mohamad@gmail.com" },
                                 ].map((social ,index) => (
                                     <motion.a 
                                         key={index}
                                         href={social.href}
+                                        target={social.href.startsWith("http") ? "_blank" : undefined}
                                         whileHover={{ y: -3, scale: 1.1}}
                                         className={`p-3 rounded-full transition-colors ${
                                             isDarkMode
@@ -224,7 +224,7 @@ const HeroSections = () => {
                                 ))}
                             </motion.div>
                             {/* Tech Stack - Mobile  */}
-                            <motion.div
+                            {/* <motion.div
                                 variants={itemVariants}
                                 className="flex justify-center items-center space-x-6 text-xs uppercase tracking-widest flex-warp"
                             >
@@ -263,7 +263,7 @@ const HeroSections = () => {
                                 >
                                     SQL
                                 </span>
-                            </motion.div>
+                            </motion.div> */}
                         </motion.div>
                     </div>
 
@@ -428,7 +428,7 @@ const HeroSections = () => {
 
 
                     {/* Scroll Indicator */}
-                    <motion.div
+                    {/* <motion.div
                         animate={{ y: [0,8,0] }}
                         transition={{ duration: 2, repeat: Infinity}}
                         className="absolute bttom-8 left-1/2 translate-x-1/2"
@@ -437,7 +437,7 @@ const HeroSections = () => {
                             size={20}
                             className={ isDarkMode ? "text-gray-600" : "text-gray-400"}
                         />
-                    </motion.div>
+                    </motion.div> */}
                 </div>
 
             </div>
