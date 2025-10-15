@@ -48,7 +48,7 @@ const Footer = () => {
     ]
 
     const scrollToTop = () =>{
-      window.scrollTo({ top: 0, behavior: 'smoth'});
+      window.scrollTo({ top: 0, behavior: 'smooth'});
     }
 
     // Animated Gradient Line Component
@@ -57,8 +57,8 @@ const Footer = () => {
         <motion.div
           className={`h-px bg-gradient-to-r ${
             isDarkMode
-              ? "from-transparent via-blue-500 to-trasnparent"
-              : "from-transparent via-blue-600 to-trasnparent"
+              ? "from-transparent via-blue-500 to-transparent"
+              : "from-transparent via-blue-600 to-transparent"
           }`}
           initial={{ width: '0%', opacity: 0 }}
           animate={isInView ? {width: '100%', opacity: 1 } : {}}
@@ -99,8 +99,8 @@ const Footer = () => {
         style={{ y: scrollY }}
         className="absolute inset-0 overflow-hidden pointer-events-none"
       >
-        <div className={`absolute bottom-10 left-1/4 w-64 h-64 rounded-full blur-3xl opacity-3 ${isDarkMode ? "bg-blue-500" : "bg-blue-400"}`}/>
-        <div className={`absolute top-10 right-1/3 w-48 h-48 rounded-full blur-3xl opacity-3 ${isDarkMode ? "bg-purple-500" : "bg-purple-400"}`}/>
+        <div className={`absolute bottom-10 left-1/4 w-64 h-64 rounded-full blur-3xl opacity-15 ${isDarkMode ? "bg-blue-500" : "bg-blue-400"}`}/>
+        <div className={`absolute top-10 right-1/3 w-48 h-48 rounded-full blur-3xl opacity-15 ${isDarkMode ? "bg-purple-500" : "bg-purple-400"}`}/>
       </motion.div>
 
       <div className="relative z-10 px-6 py-16">
@@ -134,7 +134,7 @@ const Footer = () => {
                 variants={itemVariants}
                 className={`text-sm ${isDarkMode ? "text-gray-400" : "text-gray-600"} max-w-md mx-auto`}
               >
-                Carfting digital experiences with passin, precisio, and a touch of magic.
+               Crafting digital experiences with passion, precision, and a touch of magic.
               </motion.p>
             </motion.div>
 
@@ -170,9 +170,59 @@ const Footer = () => {
               ))}
             </motion.div>
 
+            {/* Divider */}
+            <motion.div
+              variants={itemVariants}
+              className="flex items-center justify-center space-x-4"
+            >
+              <div className={`h-px w-16 ${isDarkMode ? 'bg-gray-700' : 'bg-gray-300'}`}/>
+              <motion.div
+                animate={{ scale: [1, 1.2, 1] }}
+                transition={{ duration: 2, repeat: Infinity }}
+                className="text-red-500"
+              >
+                <Heart size={16} fill="currentColor"/>
+              </motion.div>
+              <div className={`h-px w-16 ${isDarkMode ? 'bg-gray-700' : 'bg-gray-300'}`}/>
+            </motion.div>
+
+            {/* Copyright */}
+            <motion.div variants={itemVariants} className="space-y-2">
+              <p className={`text-sm ${isDarkMode ? 'text-gray-500' : 'text-gray-600'}`}>
+                ©{new Date().getFullYear()}Time To Program. All rights reserved
+              </p>
+              <p className={`text-xs ${isDarkMode ? 'text-gray-600' : 'text-gray-500'}`}>
+                Built with React & Framer Motion. 
+              </p>
+            </motion.div>
+
+            {/* Back to Top Button */}
+            <motion.div variants={itemVariants}>
+              <motion.button
+                onClick={scrollToTop}
+                className={`inline-flex items-center space-x-2 px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 ${
+                  isDarkMode
+                    ? "bg-gray-800/50 hover:bg-gray-700/50 text-gray-400 hover:text-white"
+                    : "bg-gray-100/50 hover:bg-gray-200/50 text-gray-600 hover:text-gray-900"
+                } backdrop-blur-sm border ${isDarkMode ? 'border-gray-700' : 'border-gray-300'}`}
+                whileHover={{
+                  y: -2,
+                  scale: 1.05,
+                  boxShadow: isDarkMode
+                    ? "0 10px 25px rgba(59, 130, 246, 0.15)"
+                    : "0 10px 25px rgba(59, 130, 246, 0.1)"
+                }}
+                whileTap={{ scale: 0.95 }}
+              >
+                <ArrowUp size={16} />
+                <span>Back to top</span>
+              </motion.button>
+            </motion.div>
+
           </motion.div>
         </div>
       </div>
+
     </footer>
   )
 }
