@@ -78,7 +78,7 @@ const HeroSections = () => {
                         repeat: Infinity,
                         ease: "linear"
                     }}
-                    className={`absolute top-20 right-20 w-64 h-64 rounded-full blur-3xl opacity-10 ${
+                    className={`absolute top-20 right-20 w-64 h-64 rounded-full blur-3xl opacity-15 ${
                         isDarkMode ? "bg-blue-500" : "bg-blue-400"
                     }`}
                 />
@@ -92,7 +92,7 @@ const HeroSections = () => {
                         repeat: Infinity,
                         ease: "linear",
                     }}
-                    className={`absolute buttom-20 left-20 w-48 h-48 rounded-full blur-3xl opacity-10 ${
+                    className={`absolute buttom-20 left-20 w-48 h-48 rounded-full blur-3xl opacity-15 ${
                         isDarkMode ? "bg-purple-500" : "bg-purple-400"
                     }`}
                 />
@@ -282,7 +282,7 @@ const HeroSections = () => {
                                     isDarkMode ? "text-gray-500" : "text-gray-600"
                                 } mb-6`}
                             >
-                                Full Stack Developer
+                                {/* Full Stack Developer */}
                             </motion.div>
                             
                             <motion.h1
@@ -309,7 +309,7 @@ const HeroSections = () => {
                                 } mb-12 font-light leading-relaxed max-w-lg`}
                             >
                                 I craft beautiful, functional web applications with modern 
-                                technologies and thoughtfull user experiences.
+                                technologies and thoughtful user experiences.
                             </motion.p>
 
                             {/* CTA Buttons - Desktop */}
@@ -342,12 +342,13 @@ const HeroSections = () => {
                                 className="flex space-x-6 mb-12"
                             >
                                 {[
-                                    { icon: FiGithub, href: "#" },
-                                    { icon: FiLinkedin, href: "#" },
-                                    { icon: Mail, href: "#" },
+                                    { icon: FiGithub, href: "https://github.com/IbrahemMohammad09" },
+                                    { icon: FiLinkedin, href: "https://www.linkedin.com/in/ibrahem-mohamad/" },
+                                    { icon: Mail, href: "mailto:ibrahem.a.mohamad@gmail.com" },
                                 ].map((social, index) =>(
                                     <motion.a
                                         key={index}
+                                        target={social.href.startsWith("http") ? "_blank" : undefined}
                                         href={social.href}
                                         whileHover={{ y: -3, scale: 1.1}}
                                         className={`p-3 rounded-full transition-colors ${

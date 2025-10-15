@@ -21,10 +21,12 @@ const Navbar = () => {
   const scrollToSection = (sectionId) => {
     const element = document.getElementById(sectionId);
     if (element) {
-      element.scrollIntoView({behavior: "smooth"});
-      setIsMenuOpen(false)
+      const offset = element.offsetTop - 80; 
+      window.scrollTo({ top: offset, behavior: "smooth" });
+      setIsMenuOpen(false);
     }
-  }
+  };
+  
 
   return (
     <motion.nav
@@ -60,7 +62,7 @@ const Navbar = () => {
               key={item}
               whileHover={{ y: -2}}
               onClick={() => scrollToSection(item.toLowerCase())}
-              className={`text-sm uppercase traking-wider transition-colors ${
+              className={`text-sm uppercase tracking-wider transition-colors ${
                 isDarkMode 
                   ? "text-gray-400 hover:text-white"
                   : "text-gray-600 hover:text-gray-900"
