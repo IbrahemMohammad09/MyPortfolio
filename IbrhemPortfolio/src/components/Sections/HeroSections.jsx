@@ -374,7 +374,7 @@ const HeroSections = () => {
                                     variants={itemVariants}
                                     className="flex items-center space-x-8 text-xs uppercase tracking-wides absolute -top-16 -left-28"
                                 >  
-                                    <span className={isDarkMode ? "text-gray-600" : "text-gray-500"}>React</span>
+                                    {/* <span className={isDarkMode ? "text-gray-600" : "text-gray-500"}>React</span>
                                     <span className={isDarkMode ? "text-gray-700" : "text-gray-400"}>.</span>
 
                                     <span className={isDarkMode ? "text-gray-600" : "text-gray-500"}>Node.js</span>
@@ -384,7 +384,7 @@ const HeroSections = () => {
                                     <span className={isDarkMode ? "text-gray-700" : "text-gray-400"}>.</span>
 
                                     <span className={isDarkMode ? "text-gray-600" : "text-gray-500"}>SQL</span>
-                                    <span className={isDarkMode ? "text-gray-700" : "text-gray-400"}>.</span>
+                                    <span className={isDarkMode ? "text-gray-700" : "text-gray-400"}>.</span> */}
                                 </motion.div>
 
                                 <motion.div
@@ -423,7 +423,6 @@ const HeroSections = () => {
                             </div>
                             
                         </motion.div>
-
                     </div>
 
 

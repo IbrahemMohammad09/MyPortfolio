@@ -18,13 +18,9 @@ import {
 
 import {FiGithub, FiLinkedin, FiTwitter} from 'react-icons/fi'
 
-import PROJECT1 from '../assets/images/PH.webp'
-import PROJECT2 from '../assets/images/PH.webp'
+import PROJECT1 from '../assets/images/SEA.webp'
+import PROJECT2 from '../assets/images/SOE.webp'
 import PROJECT3 from '../assets/images/PH.webp'
-import PROJECT4 from '../assets/images/PH.webp'
-import PROJECT5 from '../assets/images/PH.webp'
-import PROJECT6 from '../assets/images/PH.webp'
-import PROJECT7 from '../assets/images/PH.webp'
 
 export const SKILLS_CATEGORY = [
     {
@@ -32,40 +28,35 @@ export const SKILLS_CATEGORY = [
         icon: Code2,
         description : "Crafting beautiful , responsive user interfaces",
         skills : [
-            { name: "React", level: 95, color: "bg-blue-500" },
-            { name: "TypeScript", level: 90, color: "bg-blue-600"},
-            { name: "Next.js", level: 88, color: "bg-gray-500"},
+            { name: "React", level: 95, color: "bg-sky-400" },
+            { name: "JavaScript ES6", level: 90, color: "bg-yellow-400"},
+            { name: "Bootstrap", level: 88, color: "bg-purple-600"},
             { name: "Tailwind CSS", level: 92, color: "bg-cyan-500"},
-            { name: "Framer Motion", level: 85, color: "bg-pink-500"},
+            { name: "Framer Motion", level: 85, color: "bg-pink-600"},
         ]
     },
     {
         title: 'BcakEnd',
         icon: Server,
-        description : "Crafting beautiful , responsive user interfaces",
+        description : "Building fast, secure, and scalable systems",
         skills : [
-            { name: "React", level: 95, color: "bg-blue-500" },
-            { name: "TypeScript", level: 90, color: "bg-blue-600"},
-            { name: "Next.js", level: 88, color: "bg-gray-500"},
-            { name: "Tailwind CSS", level: 92, color: "bg-cyan-500"},
-            { name: "Framer Motion", level: 85, color: "bg-pink-500"},
+            { name: "PHP", level: 65, color: "bg-indigo-400" },
+            { name: "Laravel", level: 78, color: "bg-red-600" },
+            { name: "MySQL", level: 80, color: "bg-orange-500" },
+            { name: "SQL Server", level: 70, color: "bg-red-700" },
         ]
     },
 ]
 
 export const TECH_STACK = [
-    "JavaScript",
     "HTML5",
     "CSS3",
-    "Sass",
+    "JavaScript",
     "Webpack",
     "Vite",
-    "Jest",
-    "Cypress",
-    "Figma",
-    "Adobe XD",
-    "Notion",
-    "Slack",
+    "Java",
+    "C++",
+    "C#",
 ]
 
 export const STATS = [
@@ -78,40 +69,39 @@ export const STATS = [
 export const PROJECTS = [
     {
         id: 1,
-        title: "E-Commerce Platform",
+        title: "SEA DETAILING",
         description:
-            "lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem ",
+            "Professional cleaning services for cars and home furniture — bringing freshness, shine, and comfort to your everyday life.",
         image: PROJECT1,
         tags: ["react", "Tailwind", "Farmer motion"],
-        liveUrl: "#",
-        githubUrl: "#",
+        liveUrl: "https://sea-cardetailing.com/",
         featured: true,
-        category: "Full Stack",
+        category: "Front End",
     },
     {
         id: 2,
-        title: "E-Commerce Platform",
+        title: "Star Of Elegance",
         description:
-            "lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem ",
-        image: PROJECT1,
+            "We specialize in innovative, custom furniture design that blends craftsmanship with modern aesthetics. Our mission is to transform ideas into reality, delivering exceptional quality and attention to detail.",
+        image: PROJECT2,
         tags: ["react", "Tailwind", "Farmer motion"],
         liveUrl: "#",
-        githubUrl: "#",
-        featured: false,
-        category: "Full Stack",
+        featured: true,
+        category: "Front End",
     },
     {
         id: 3,
-        title: "E-Commerce Platform",
+        title: "Philipus",
         description:
-            "lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem ",
-        image: PROJECT1,
-        tags: ["react", "Tailwind", "Farmer motion"],
-        liveUrl: "#",
-        githubUrl: "#",
-        featured: false,
-        category: "Full Stack",
+            "Philipos Center, a licensed Syrian institution (CR No. 13062) founded in 2017, specializes in human development and training. It has delivered over 50,000 training hours through 281 in-person and online programs, offering diverse lectures, workshops, and customized courses via its virtual platfor",
+        image: PROJECT3,
+        tags: ["react", "Tailwind"],
+        liveUrl: "https://philipus-cdt.com/",
+        featured: true,
+        category: "Front End",
     },
+
+
 ]
 
 export const JOURNEY_STEPS = [

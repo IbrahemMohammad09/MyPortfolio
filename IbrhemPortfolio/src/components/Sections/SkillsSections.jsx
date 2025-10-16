@@ -75,7 +75,7 @@ const SkillsSections = () => {
                 className="text-3xl md:text-5xl font-light mb-6"
             >
                 Skills &
-                <span className="text-blue-500 font-medium">Technologies</span>
+                <span className="text-blue-500 font-medium"> Technologies</span>
             </motion.h2>
 
             <motion.p

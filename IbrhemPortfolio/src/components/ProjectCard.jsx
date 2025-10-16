@@ -66,6 +66,7 @@ const ProjectCard = ({project, index, isDarkMode}) => {
           className="absolute inset-0 bg-black/60 backdrop-blur-sm flex items-center justify-center space-x-4"
         >
           <motion.a
+            target="_blank"
             href={project.liveUrl}
             initial={{ y:20, opacity: 0.5}}
             whileHover={{y: 0, opacity: 1.05}}
@@ -76,7 +77,7 @@ const ProjectCard = ({project, index, isDarkMode}) => {
             <span>Live Demo</span>
           </motion.a>
 
-          <motion.a
+          {/* <motion.a
             href={project.githubUrl}
             initial={{ y:20, opacity: 0.5}}
             whileHover={{y: 0, opacity: 1.05}}
@@ -85,7 +86,7 @@ const ProjectCard = ({project, index, isDarkMode}) => {
           >
             <FiGithub size={16} />
             <span>GitHub</span>
-          </motion.a>
+          </motion.a> */}
         </motion.div>
       </div>
 

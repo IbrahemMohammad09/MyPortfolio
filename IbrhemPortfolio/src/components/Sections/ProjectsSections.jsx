@@ -61,7 +61,7 @@ const ProjectsSections = () => {
           className="text-3xl md:text-5xl font-light mb-6"
         >
           Recent
-          <span className="text-blue-500 font-medium">Projects</span>
+          <span className="text-blue-500 font-medium"> Projects</span>
         </motion.h2>
 
         <motion.p
