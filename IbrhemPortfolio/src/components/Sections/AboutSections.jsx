@@ -120,21 +120,18 @@ const AboutSections = () => {
                                 isDarkMode ? "text-gray-300" : "text-gray-700"
                             }`}
                         >
-                            I believe technology should be a bridge that connects people and 
-                            solves real-world problems. My passin lies in crafting digital 
-                            experiences that are not just functional, but delightful and 
-                            accessible to everyone.
+                            I believe technology should serve as a bridge that connects people and solves real-world challenges. 
+                            My passion lies in creating digital experiences that are not only functional, but also intuitive, enjoyable, 
+                            and accessible to everyone.
                         </p>
                         <p
                             className={`text-base leading-relaxed ${
                                 isDarkMode ? "text-gray-400" : "text-gray-600"
                             }`}
                         >
-                            when I'm not coding, you'll find me exploring new frameworks,
-                            contributing to open source, or mentoring aspiring developers. I 
-                            love the constant evolution of web technologies and the endless 
-                            possibilities they bring to create meaningful digital 
-                            experiences.
+                            When I’m not coding, I’m exploring new frameworks, contributing to open-source projects, 
+                            or mentoring aspiring developers. I’m driven by the continuous evolution of web technologies 
+                            and the limitless opportunities they offer to build meaningful and impactful digital solutions.
                         </p>
                     </motion.div>
 
@@ -250,13 +247,15 @@ const AboutSections = () => {
                                             {step.year}
                                         </span>
                                     </div>
-                                    <div
+                                    <a
+                                        href={step.company.url}
+                                        target="_blank"
                                         className={`text-sm font-medium ${
                                             isDarkMode ? "text-blue-400" : "text-blue-600"
                                         } mb-3`}
                                     >
-                                        {step.company}
-                                    </div>
+                                        {step.company.title}
+                                    </a>
                                     <p
                                         className={`text-sm leading-relaxed ${
                                             isDarkMode ? "text-gray-400" : "text-gray-600"

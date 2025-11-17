@@ -1,6 +1,7 @@
 import {
     Code2,
     GraduationCap,
+    Laptop ,
     Briefcase,
     Award,
     Rocket,
@@ -15,6 +16,7 @@ import {
     MapPin,
     Phone,
 } from 'lucide-react';
+
 
 import {FiGithub, FiLinkedin, FiTwitter} from 'react-icons/fi'
 
@@ -106,21 +108,30 @@ export const PROJECTS = [
 
 export const JOURNEY_STEPS = [
     {
-        year: "2021",
-        title: "Started Coding Journey",
-        company: "Self-taught",
-        description: "lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem ",
+        year: "2023",
+        title: "Started working at Spark",
+        company:{title: "Spark Company", url : "https://sparkengdev.com/"},
+        description: "Web Development Leader — guiding the web team with deep React expertise to deliver high-quality, scalable applications, combining strong leadership with technical excellence.",
         icon: Code2,
-        color: "bg-blue-500"
+        color: "bg-[#00FFFF]"
     },
     {
-        year: "2022",
-        title: "Started Coding Journey",
-        company: "Self-taught",
-        description: "lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem ",
-        icon: Code2,
-        color: "bg-green-500"
+        year: "2023",
+        title: "Studying a set of courses",
+        company: {title: "Coursera", url : "https://www.coursera.org/user/dbb6fd84242c9d3eed3c161fb5540017"},
+        description: "I have completed a diverse set of courses and developed a wide range of projects.",
+        icon: Laptop,
+        color: "bg-[#2563EB]"
     },
+    {
+        year: "2016 - 2022",
+        title: "University studies began",
+        company: {title : "Tishreen University", url : "https://latakia-univ.edu.sy/"},
+        description: " Bachelor's degree in IT, Software Engineering Department",
+        icon: GraduationCap,
+        color: "bg-[#00BFFF]"
+    },
+    
 ]
 
 export const PASSIONS = [
