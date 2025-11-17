@@ -214,7 +214,7 @@ const AboutSections = () => {
                     <div className="space-y-8">
                         {JOURNEY_STEPS.map((step, index) => (
                             <motion.div
-                                key={step.year}
+                                key={step.id}
                                 variants={stepVariants}
                                 whileHover={{ x: 4 }}
                                 className="relative flex items-start space-x-6 group"
@@ -271,7 +271,7 @@ const AboutSections = () => {
             </div>
 
             {/* Call to Action */}
-            <motion.div
+            {/* <motion.div
                 initial="hidden"
                 animate={isInView ? "visible" : "hidden"}
                 variants={containerVariants}
@@ -297,7 +297,7 @@ const AboutSections = () => {
                         Let's Work Together
                     </motion.button>
                 </motion.div>
-            </motion.div>
+            </motion.div> */}
         </div>
     </section>
   )

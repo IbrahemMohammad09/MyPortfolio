@@ -108,6 +108,7 @@ export const PROJECTS = [
 
 export const JOURNEY_STEPS = [
     {
+        id : 3, 
         year: "2023",
         title: "Started working at Spark",
         company:{title: "Spark Company", url : "https://sparkengdev.com/"},
@@ -116,6 +117,7 @@ export const JOURNEY_STEPS = [
         color: "bg-[#00FFFF]"
     },
     {
+        id : 2,
         year: "2023",
         title: "Studying a set of courses",
         company: {title: "Coursera", url : "https://www.coursera.org/user/dbb6fd84242c9d3eed3c161fb5540017"},
@@ -124,6 +126,7 @@ export const JOURNEY_STEPS = [
         color: "bg-[#2563EB]"
     },
     {
+        id : 1,
         year: "2016 - 2022",
         title: "University studies began",
         company: {title : "Tishreen University", url : "https://latakia-univ.edu.sy/"},
