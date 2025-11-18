@@ -11,6 +11,8 @@ import { CONTACT_INFO, SOCIAL_LINKS } from "../../utils/data"
 import { containerVariants, itemVariants } from "../../utils/helper"
 import TextInput from "../Input/textInput"
 import SuccessModel from "../SuccessModel"
+import emailjs from "@emailjs/browser";
+
 
 const ContactSection = () => {
   const { isDarkMode } = useTheme();
@@ -18,6 +20,7 @@ const ContactSection = () => {
     name: "",
     email: "",
     message: "",
+    title: "you have message from Portfolio"
   });
   const [showSuccess, setShowSuccess] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -39,21 +42,44 @@ const ContactSection = () => {
     })
   }
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
+
+  const SERVICE_ID = "service_nsos828";
+  const TEMPLATE_ID = "template_9s2to4m";
+  const PUBLIC_KEY = "5vJT1QDohQIqCsVh5";
+
+
+  const handleSubmit = async () => {
+    if (isSubmitting) return;
+  
     setIsSubmitting(true);
-
-    //Simlate API call
-    await new Promise((resolve) => setTimeout(resolve, 1000))
-
-    setIsSubmitting(false)
-    setShowSuccess(true)
-    setFormData({ name: "",email: "", message: ""})
-
-    // Auto hide Success modal after 3 sec
-    setTimeout(() => setShowSuccess(false), 3000)
+  
+    const templateParams = {
+      name: formData.name,
+      email: formData.email,
+      message: formData.message,
+    };
+    
+  
+    try {
+      const response = await emailjs.send(
+        SERVICE_ID,
+        TEMPLATE_ID,
+        templateParams,
+        PUBLIC_KEY
+      );
+      // console.log(templateParams);
+      // console.log("Email sent:", response);
+      alert("Your message has been sent successfully!");
+  
+      setFormData({ name: "", email: "", message: "" });
+    } catch (error) {
+      // console.error("EmailJS Error:", error);
+      alert("Failed to send message. Please try again later.");
+    }
+  
+    setIsSubmitting(false);
   };
-
+  
 
   return <section
     id="contact"
@@ -136,6 +162,7 @@ const ContactSection = () => {
                     handleInputChange={(text) =>
                       handleInputChange('name', text)
                     }
+                    
                   />
                   <TextInput
                     isDarkMode={isDarkMode}
@@ -144,6 +171,7 @@ const ContactSection = () => {
                     handleInputChange={(text) =>
                       handleInputChange('email', text)
                     }
+                    
                   />
                 </div>
 
@@ -155,6 +183,7 @@ const ContactSection = () => {
                     handleInputChange={(text) =>
                       handleInputChange('message', text)
                     }
+                    
                   />
 
                   <motion.button
@@ -285,7 +314,7 @@ const ContactSection = () => {
         </div>
 
         {/* Bottom CTA */}
-        <motion.div
+        {/* <motion.div
           initial="hidden"
           animate={isInView ? "visible" : "hidden"}
           variants={containerVariants}
@@ -318,7 +347,7 @@ const ContactSection = () => {
               Schedule a Call
             </motion.button>
           </motion.div>
-        </motion.div>
+        </motion.div> */}
       </div>
       
       <SuccessModel 

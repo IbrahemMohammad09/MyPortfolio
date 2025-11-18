@@ -141,17 +141,17 @@ export const PASSIONS = [
     {
         icon: Heart,
         title: "User Experience",
-        description: "lorem lorem lorem lorem lorem lorem lorem lorem lorem "
+        description: "I strive to create interfaces that feel natural, intuitive, and effortless for users, ensuring every interaction is both meaningful and enjoyable."
     },
     {
         icon: Coffee,
         title: "Problem Solving",
-        description: "lorem lorem lorem lorem lorem lorem lorem lorem lorem "
+        description: "I enjoy breaking down complex challenges into clear, effective solutions by combining analytical thinking with creativity and clean code practices."
     },
     {
         icon: BookOpen,
         title: "Continuous Learing",
-        description: "lorem lorem lorem lorem lorem lorem lorem lorem lorem "
+        description: "I’m committed to constantly expanding my skills and staying up-to-date with the latest tools, technologies, and best practices to build better digital experiences every day"
     },
 ]
 
@@ -159,21 +159,21 @@ export const SOCIAL_LINKS =[
     {
         name: "GitHub",
         icon: FiGithub,
-        url: "#",
+        url: "https://github.com/IbrahemMohammad09",
         color: "hover:text-gray-400",
         bgColor: "hover:bg-gray-800",
     },
     {
         name: "LinkedIn",
         icon: FiLinkedin,
-        url: "#",
+        url: "https://www.linkedin.com/in/ibrahem-mohamad/",
         color: "hover:text-blue-400",
         bgColor: "hover:bg-blue-500/10",
     },
     {
         name: "Email",
         icon: Mail,
-        url: "Mailto:@@@@",
+        url: "Mailto:ibrahem.a.mohamad@gmail.com",
         color: "hover:text-green-400",
         bgColor: "hover:bg-gree-500/10",
     }
@@ -188,11 +188,11 @@ export const CONTACT_INFO = [
     {
         icon: Mail,
         label: "Email",
-        value: "@@@@@@@@@@"
+        value: "ibrahem.a.mohamad@gmail.com"
     },
     {
         icon: Phone,
         label: "Phone",
-        value: "000000"
+        value: "+964 751 057 8532"
     }
 ]

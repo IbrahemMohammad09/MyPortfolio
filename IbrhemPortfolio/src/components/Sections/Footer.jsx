@@ -24,25 +24,19 @@ const Footer = () => {
       {
         name: "GitHub",
         icon:  FiGithub,
-        url: "#",
+        url: "https://github.com/IbrahemMohammad09",
         color: "hover:text-gray-400"
       },
       {
         name: "LinkedIn",
         icon:  FiLinkedin,
-        url: "#",
+        url: "https://www.linkedin.com/in/ibrahem-mohamad/",
         color: "hover:text-blue-400"
-      },
-      {
-        name: "Twitter",
-        icon:  FiTwitter,
-        url: "#",
-        color: "hover:text-sky-400"
       },
       {
         name: "Email",
         icon:  Mail,
-        url: "#",
+        url: "Mailto:ibrahem.a.mohamad@gmail.com",
         color: "hover:text-green-400"
       },
     ]
@@ -134,7 +128,7 @@ const Footer = () => {
                 variants={itemVariants}
                 className={`text-sm ${isDarkMode ? "text-gray-400" : "text-gray-600"} max-w-md mx-auto`}
               >
-               Crafting digital experiences with passion, precision, and a touch of magic.
+               Crafting digital experiences with passion, precision, and meaningful impact.
               </motion.p>
             </motion.div>
 
@@ -189,7 +183,7 @@ const Footer = () => {
             {/* Copyright */}
             <motion.div variants={itemVariants} className="space-y-2">
               <p className={`text-sm ${isDarkMode ? 'text-gray-500' : 'text-gray-600'}`}>
-                ©{new Date().getFullYear()}Time To Program. All rights reserved
+                ©{new Date().getFullYear()} Time To Program. All rights reserved.
               </p>
               <p className={`text-xs ${isDarkMode ? 'text-gray-600' : 'text-gray-500'}`}>
                 Built with React & Framer Motion. 
