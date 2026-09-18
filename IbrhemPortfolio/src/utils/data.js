@@ -183,7 +183,7 @@ export const CONTACT_INFO = [
     {
         icon: MapPin,
         label: "Location",
-        value: "Erbil"
+        value: "Oberste Höfe 14, 34225 Baunatal, Deutschland"
     },
     {
         icon: Mail,
@@ -193,6 +193,6 @@ export const CONTACT_INFO = [
     {
         icon: Phone,
         label: "Phone",
-        value: "+964 751 057 8532"
+        value: "+49 1776 906703"
     }
 ]
