@@ -9,7 +9,6 @@ import { Send } from "lucide-react"
 import { useTheme } from "../../context/ThemeContext"
 import { CONTACT_INFO, SOCIAL_LINKS } from "../../utils/data"
 import { containerVariants, itemVariants } from "../../utils/helper"
-// import TextInput from "../Input/textInput"
 import TextInput from "../Input/TextInput"
 import SuccessModel from "../SuccessModel"
 import emailjs from "@emailjs/browser";
