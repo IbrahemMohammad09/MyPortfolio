@@ -111,7 +111,7 @@ export const JOURNEY_STEPS = [
         id : 3, 
         year: "2023",
         title: "Started working at Spark",
-        company:{title: "Spark Company", url : "https://sparkengdev.com/"},
+        company:{title: "Spark Company", url : "https://sparkcompany.tech/"},
         description: "Web Development Leader — guiding the web team with deep React expertise to deliver high-quality, scalable applications, combining strong leadership with technical excellence.",
         icon: Code2,
         color: "bg-[#00FFFF]"
