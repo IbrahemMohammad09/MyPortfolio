@@ -80,28 +80,7 @@ export const PROJECTS = [
         featured: true,
         category: "Front End",
     },
-    {
-        id: 2,
-        title: "Star Of Elegance",
-        description:
-            "We specialize in innovative, custom furniture design that blends craftsmanship with modern aesthetics. Our mission is to transform ideas into reality, delivering exceptional quality and attention to detail.",
-        image: PROJECT2,
-        tags: ["react", "Tailwind", "Farmer motion"],
-        liveUrl: "#",
-        featured: true,
-        category: "Front End",
-    },
-    {
-        id: 3,
-        title: "Philipus",
-        description:
-            "Philipos Center, a licensed Syrian institution (CR No. 13062) founded in 2017, specializes in human development and training. It has delivered over 50,000 training hours through 281 in-person and online programs, offering diverse lectures, workshops, and customized courses via its virtual platfor",
-        image: PROJECT3,
-        tags: ["react", "Tailwind"],
-        liveUrl: "https://philipus-cdt.com/",
-        featured: true,
-        category: "Front End",
-    },
+    
 
 
 ]
