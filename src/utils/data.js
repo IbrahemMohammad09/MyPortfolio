@@ -23,6 +23,8 @@ import {FiGithub, FiLinkedin, FiTwitter} from 'react-icons/fi'
 import PROJECT1 from '../assets/images/SEA.webp'
 import PROJECT2 from '../assets/images/SOE.webp'
 import PROJECT3 from '../assets/images/PH.webp'
+import Nexora from '../assets/images/nexora.png'
+
 
 export const SKILLS_CATEGORY = [
     {
@@ -69,13 +71,24 @@ export const STATS = [
 ]
 
 export const PROJECTS = [
+        {
+        id: 4,
+        title: "Nexora",
+        description:
+            "A modern, responsive website designed for an IT startup, combining a clean user interface with a strong and professional digital identity. Built with React, Vite, and Tailwind CSS, featuring reusable components and a seamless experience across all devices.",
+        image: Nexora,
+        tags: ["React" , "Vite" , "Tailwind CSS"],
+        liveUrl: "https://ibrahemmohammad09.github.io/NEXORA/",
+        featured: true,
+        category: "Front End"
+    },
     {
         id: 1,
         title: "SEA DETAILING",
         description:
             "Professional cleaning services for cars and home furniture — bringing freshness, shine, and comfort to your everyday life.",
         image: PROJECT1,
-        tags: ["react", "Tailwind", "Farmer motion"],
+        tags: ["react", "Tailwind CSS", "Farmer motion"],
         liveUrl: "https://sea-cardetailing.com/",
         featured: true,
         category: "Front End",
@@ -86,22 +99,23 @@ export const PROJECTS = [
         description:
             "We specialize in innovative, custom furniture design that blends craftsmanship with modern aesthetics. Our mission is to transform ideas into reality, delivering exceptional quality and attention to detail.",
         image: PROJECT2,
-        tags: ["react", "Tailwind", "Farmer motion"],
+        tags: ["react", "Tailwind CSS", "Farmer motion"],
         liveUrl: "#",
         featured: true,
         category: "Front End",
     },
-    {
-        id: 3,
-        title: "Philipus",
-        description:
-            "Philipos Center, a licensed Syrian institution (CR No. 13062) founded in 2017, specializes in human development and training. It has delivered over 50,000 training hours through 281 in-person and online programs, offering diverse lectures, workshops, and customized courses via its virtual platfor",
-        image: PROJECT3,
-        tags: ["react", "Tailwind"],
-        liveUrl: "https://philipus-cdt.com/",
-        featured: true,
-        category: "Front End",
-    },
+    // {
+    //     id: 3,
+    //     title: "Philipus",
+    //     description:
+    //         "Philipos Center, a licensed Syrian institution (CR No. 13062) founded in 2017, specializes in human development and training. It has delivered over 50,000 training hours through 281 in-person and online programs, offering diverse lectures, workshops, and customized courses via its virtual platfor",
+    //     image: PROJECT3,
+    //     tags: ["react", "Tailwind CSS"],
+    //     liveUrl: "https://philipus-cdt.com/",
+    //     featured: true,
+    //     category: "Front End",
+    // },
+
 
 
 ]
