@@ -23,7 +23,7 @@ import {FiGithub, FiLinkedin, FiTwitter} from 'react-icons/fi'
 import PROJECT1 from '../assets/images/SEA.webp'
 import PROJECT2 from '../assets/images/SOE.webp'
 import PROJECT3 from '../assets/images/PH.webp'
-import Nexora from '../assets/images/nexora.png'
+import Nexora from '../assets/images/nexora.PNG'
 
 
 export const SKILLS_CATEGORY = [
