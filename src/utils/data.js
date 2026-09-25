@@ -89,7 +89,7 @@ export const PROJECTS = [
             "Professional cleaning services for cars and home furniture — bringing freshness, shine, and comfort to your everyday life.",
         image: PROJECT1,
         tags: ["react", "Tailwind CSS", "Farmer motion"],
-        liveUrl: "https://sea-cardetailing.com/",
+        liveUrl: "https://ibrahemmohammad09.github.io/SEA_Detailing",
         featured: true,
         category: "Front End",
     },
