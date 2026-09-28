@@ -100,7 +100,7 @@ export const PROJECTS = [
             "We specialize in innovative, custom furniture design that blends craftsmanship with modern aesthetics. Our mission is to transform ideas into reality, delivering exceptional quality and attention to detail.",
         image: PROJECT2,
         tags: ["react", "Tailwind CSS", "Farmer motion"],
-        liveUrl: "#",
+        liveUrl: "https://ibrahemmohammad09.github.io/star_of_elegance/",
         featured: true,
         category: "Front End",
     },
