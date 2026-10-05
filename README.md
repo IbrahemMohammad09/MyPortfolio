@@ -1,12 +1,44 @@
-# React + Vite
+# Ibrahem Mohammad — Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A personal portfolio website built with React. It introduces the developer, presents skills and selected projects, shares background information, and provides contact links.
 
-Currently, two official plugins are available:
+## Features
+- Hero, skills, projects, about, and contact sections.
+- Project cards with technology tags and live project links.
+- Theme context for site-wide appearance state.
+- Contact form components with EmailJS packages.
+- Responsive layout and motion effects.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Tech stack
+- React 19 and Vite
+- Tailwind CSS
+- Framer Motion and Lucide React
+- EmailJS
 
-## Expanding the ESLint configuration
+## Getting started
+```bash
+git clone https://github.com/IbrahemMohammad09/MyPortfolio.git
+cd MyPortfolio
+npm install
+npm run dev
+```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Vite prints the local development URL in the terminal.
+
+## Available scripts
+- `npm run dev` — start the development server.
+- `npm run build` — build the production assets.
+- `npm run preview` — preview the production build.
+- `npm run lint` — run ESLint.
+
+## Configuration
+Configure the EmailJS service, template, and public key used by the contact form through the project's intended environment settings. Never commit private credentials.
+
+## Project structure
+- `src/components/Sections/` — portfolio page sections.
+- `src/components/` — navigation, project cards, and form controls.
+- `src/context/ThemeContext.jsx` — theme state.
+- `src/utils/` — portfolio data and helper functions.
+
+## License
+No license is specified. Contact the repository owner before reuse or redistribution.
