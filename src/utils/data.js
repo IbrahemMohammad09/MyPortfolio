@@ -53,18 +53,21 @@ export const SKILLS_CATEGORY = [
 ]
 
 export const TECH_STACK = [
-    "HTML5",
-    "CSS3",
-    "JavaScript",
-    "Webpack",
+    "React",
+    "React Router",
     "Vite",
+    "Tailwind CSS",
+    "Framer Motion",
+    "Bootstrap",
+    "JavaScript",
     "Java",
     "C++",
-    "C#",
+    "HTML",
+    "CSS",
 ]
 
 export const STATS = [
-    { number: "50+", label: "Projects Completed"},
+    { number: "10+", label: "Projects Completed"},
     { number: "3+", label: "Years Experience"},
     { number: "20+", label: "Technologies"},
     { number: "100%", label: "Client Satisfaction"},
