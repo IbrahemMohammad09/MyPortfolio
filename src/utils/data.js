@@ -22,8 +22,8 @@ import {FiGithub, FiLinkedin, FiTwitter} from 'react-icons/fi'
 
 import PROJECT1 from '../assets/images/SEA.webp'
 import PROJECT2 from '../assets/images/SOE.webp'
-import PROJECT3 from '../assets/images/PH.webp'
 import Nexora from '../assets/images/nexora.PNG'
+import Car from '../assets/images/Car.PNG'
 
 
 export const SKILLS_CATEGORY = [
@@ -73,22 +73,22 @@ export const STATS = [
 export const PROJECTS = [
         {
         id: 4,
-        title: "Nexora",
+        title: "NEXORA",
         description:
-            "A modern, responsive website designed for an IT startup, combining a clean user interface with a strong and professional digital identity. Built with React, Vite, and Tailwind CSS, featuring reusable components and a seamless experience across all devices.",
+            "A modern, responsive landing page for a digital systems and software brand, featuring an animated particle background, a sleek dark interface, and interactive solutions sections built to showcase innovative digital technologies.",
         image: Nexora,
-        tags: ["React" , "Vite" , "Tailwind CSS"],
+        tags:  ["React", "Vite", "Tailwind CSS", "OGL", "tsparticles", "Lucide React"],
         liveUrl: "https://ibrahemmohammad09.github.io/NEXORA/",
         featured: true,
         category: "Front End"
     },
     {
-        id: 1,
+        id: 3,
         title: "SEA DETAILING",
         description:
-            "Professional cleaning services for cars and home furniture — bringing freshness, shine, and comfort to your everyday life.",
+            "A responsive service website for car and furniture cleaning, featuring service showcases, an image-rich portfolio, customer reviews, and an interactive booking flow with dedicated confirmation pages.",
         image: PROJECT1,
-        tags: ["react", "Tailwind CSS", "Farmer motion"],
+        tags: ["React", "Vite", "Tailwind CSS", "Framer Motion", "Swiper", "Redux Toolkit", "Firebase"],
         liveUrl: "https://ibrahemmohammad09.github.io/SEA_Detailing",
         featured: true,
         category: "Front End",
@@ -97,26 +97,24 @@ export const PROJECTS = [
         id: 2,
         title: "Star Of Elegance",
         description:
-            "We specialize in innovative, custom furniture design that blends craftsmanship with modern aesthetics. Our mission is to transform ideas into reality, delivering exceptional quality and attention to detail.",
+            "A modern furniture and interior design website showcasing custom furniture, design projects, and client reviews. Features service and project details, customer inquiry forms, order management, and an administrative dashboard with protected routes and authentication state.",
         image: PROJECT2,
-        tags: ["react", "Tailwind CSS", "Farmer motion"],
+        tags: ["React", "React Router", "Tailwind CSS", "Redux Toolkit", "Axios", "Framer Motion", "Swiper"],
         liveUrl: "https://ibrahemmohammad09.github.io/star_of_elegance/",
         featured: true,
         category: "Front End",
     },
-    // {
-    //     id: 3,
-    //     title: "Philipus",
-    //     description:
-    //         "Philipos Center, a licensed Syrian institution (CR No. 13062) founded in 2017, specializes in human development and training. It has delivered over 50,000 training hours through 281 in-person and online programs, offering diverse lectures, workshops, and customized courses via its virtual platfor",
-    //     image: PROJECT3,
-    //     tags: ["react", "Tailwind CSS"],
-    //     liveUrl: "https://philipus-cdt.com/",
-    //     featured: true,
-    //     category: "Front End",
-    // },
-
-
+    {
+        id: 1,
+        title: "Car Rental Demo",
+        description:
+            "A bilingual car rental web application built with React, featuring vehicle browsing, search, booking workflows, and a demo dashboard for managing cars, brands, and reservations. Supports Arabic and English with browser-based data persistence.",
+        image: Car,
+        tags: ["React", "React Router", "Vite", "Bootstrap", "Material UI", "Tailwind CSS", "i18next"],
+        liveUrl: "https://ibrahemmohammad09.github.io/Car/",
+        featured: true,
+        category: "Front End",
+    },
 
 ]
 
