@@ -32,39 +32,51 @@ export const SKILLS_CATEGORY = [
         icon: Code2,
         description : "Crafting beautiful , responsive user interfaces",
         skills : [
-            { name: "React", level: 95, color: "bg-sky-400" },
-            { name: "JavaScript ES6", level: 90, color: "bg-yellow-400"},
-            { name: "Bootstrap", level: 88, color: "bg-purple-600"},
-            { name: "Tailwind CSS", level: 92, color: "bg-cyan-500"},
-            { name: "Framer Motion", level: 85, color: "bg-pink-600"},
+            { name: "React", level: 90, color: "bg-sky-400" },
+            { name: "JavaScript ES6", level: 80, color: "bg-yellow-400"},
+            { name: "Bootstrap", level: 90, color: "bg-purple-600"},
+            { name: "Tailwind CSS", level: 85, color: "bg-cyan-500"},
+            { name: "Framer Motion", level: 80, color: "bg-pink-600"},
         ]
     },
     {
-        title: 'BcakEnd',
+        title: 'BackEnd',
         icon: Server,
         description : "Building fast, secure, and scalable systems",
         skills : [
-            { name: "PHP", level: 65, color: "bg-indigo-400" },
-            { name: "Laravel", level: 78, color: "bg-red-600" },
-            { name: "MySQL", level: 80, color: "bg-orange-500" },
+            { name: "Node.js", level: 75, color: "bg-green-500" },
+            { name: "Express.js", level: 80, color: "bg-gray-400" },
+            { name: "MongoDB", level: 75, color: "bg-emerald-500" },
+            { name: "MySQL", level: 70, color: "bg-orange-500" },
             { name: "SQL Server", level: 70, color: "bg-red-700" },
         ]
     },
 ]
 
 export const TECH_STACK = [
+    // Frontend Core & State Management
     "React",
     "React Router",
-    "Vite",
+    "Redux Toolkit",
+    "JavaScript ES6",
+
+    // UI & Styling
     "Tailwind CSS",
-    "Framer Motion",
     "Bootstrap",
-    "JavaScript",
-    "Java",
-    "C++",
-    "HTML",
-    "CSS",
-]
+    "Material UI",
+    "Framer Motion",
+
+    // Backend & Databases
+    "Node.js",
+    "Express.js",
+    "MongoDB",
+    "MySQL",
+    "SQL Server",
+
+    // Build Tools & Version Control
+    "Vite",
+    "Git & GitHub",
+];
 
 export const STATS = [
     { number: "10+", label: "Projects Completed"},
@@ -165,7 +177,7 @@ export const PASSIONS = [
     },
     {
         icon: BookOpen,
-        title: "Continuous Learing",
+        title: "Continuous Learning",
         description: "I’m committed to constantly expanding my skills and staying up-to-date with the latest tools, technologies, and best practices to build better digital experiences every day"
     },
 ]
@@ -190,7 +202,7 @@ export const SOCIAL_LINKS =[
         icon: Mail,
         url: "Mailto:ibrahem.a.mohamad@gmail.com",
         color: "hover:text-green-400",
-        bgColor: "hover:bg-gree-500/10",
+        bgColor: "hover:bg-green-500/10",
     }
 ]
 
