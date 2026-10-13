@@ -10,7 +10,7 @@ import {
 import {FiGithub, FiLinkedin} from "react-icons/fi"
 import { useTheme } from "../../context/ThemeContext"
 
-import PORFILE_PIC from '../../assets/images/me.webp'
+import PORFILE_PIC from '../../assets/images/me.png'
 
 import { itemVariants , containerVariants } from "../../utils/helper"
 
