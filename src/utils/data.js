@@ -80,9 +80,9 @@ export const TECH_STACK = [
 
 export const STATS = [
     { number: "10+", label: "Projects Completed"},
-    { number: "3+", label: "Years Experience"},
+    { number: "4+", label: "Years Experience"},
     { number: "20+", label: "Technologies"},
-    { number: "100%", label: "Client Satisfaction"},
+    { number: "90%", label: "Client Satisfaction"},
 ]
 
 export const PROJECTS = [
@@ -210,7 +210,7 @@ export const CONTACT_INFO = [
     {
         icon: MapPin,
         label: "Location",
-        value: "Oberste Höfe 14, 34225 Baunatal, Deutschland"
+        value: "34225 Baunatal, Deutschland"
     },
     {
         icon: Mail,

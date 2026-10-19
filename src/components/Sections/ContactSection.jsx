@@ -299,7 +299,7 @@ const ContactSection = () => {
               <div className="flex items-center space-x-3 mb-2">
                 <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse"/>
                 <span className="font-medium text-green-500">
-                  Avilable for work
+                  Available for work
                 </span>
               </div>
               <p 
