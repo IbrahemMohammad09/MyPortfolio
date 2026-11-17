@@ -19,19 +19,6 @@ const SkillsSections = () => {
 
     const y = useTransform (scrollYProgress, [0, 1], [100, -100]);
 
-    const SkillBarVariants = {
-        hidden: { width: 0, opacity: 0},
-        visible: (level) => ({
-            width: `${level}%`,
-            opacity: 1,
-            transition: {
-                duration: 1.2,
-                ease: "easeOut",
-                delay: 0.3,
-            }
-        })
-    }
-
   return <section
     ref={sectionRef}
     id="skills"
@@ -127,37 +114,19 @@ const SkillsSections = () => {
                         </div>
                     </div>
                     
-                    {/* Skills List */}
-                    <div className="space-y-4">
-                        {category.skills.map((skill, skillIndex) => (
-                            <div key={skill.name} className="group">
-                                <div className="flex justify-between items-center mb-2">
-                                    <span className="text-sm font-medium">{skill.name}</span>      
-                                    <span 
-                                        className={`text-xs ${
-                                            isDarkMode ? "text-gray-500" : "text-gray-600"
-                                        }`}
-                                    >
-                                        {skill.level}%
-                                    </span>                          
-                                </div>
-
-                                <div
-                                    className={`h-2 rounded-full overflow-hidden ${
-                                        isDarkMode ? "bg-gray-800" : "bg-gray-200"
-                                    }`}
-                                >
-                                    <motion.div
-                                        variants={SkillBarVariants}
-                                        initial="hidden"
-                                        animate={isInView ? "visible" : "hidden"}
-                                        custom={skill.level}
-                                        className={`h-full ${skill.color} rounded-full relative`}
-                                    >
-                                        <div className="absolute inset-0 bg-white/20 rounded-full opacity-0 group-hover:opacity-100 transition-opcaity duration-300"/>
-                                    </motion.div>
-                                </div>
-                            </div>
+                    {/* Skills list */}
+                    <div className="flex flex-wrap gap-3">
+                        {category.skills.map((skill) => (
+                            <span
+                                key={skill.name}
+                                className={`rounded-full border px-4 py-2 text-sm ${
+                                    isDarkMode
+                                        ? "border-gray-700 bg-gray-800 text-gray-200"
+                                        : "border-gray-200 bg-gray-50 text-gray-700"
+                                }`}
+                            >
+                                {skill.name}
+                            </span>
                         ))}
                     </div>
                 </motion.div>

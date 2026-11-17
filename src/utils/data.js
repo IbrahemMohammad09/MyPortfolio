@@ -32,11 +32,11 @@ export const SKILLS_CATEGORY = [
         icon: Code2,
         description : "Crafting beautiful , responsive user interfaces",
         skills : [
-            { name: "React", level: 90, color: "bg-sky-400" },
-            { name: "JavaScript ES6", level: 80, color: "bg-yellow-400"},
-            { name: "Bootstrap", level: 90, color: "bg-purple-600"},
-            { name: "Tailwind CSS", level: 85, color: "bg-cyan-500"},
-            { name: "Framer Motion", level: 80, color: "bg-pink-600"},
+            { name: "React" },
+            { name: "JavaScript ES6" },
+            { name: "Bootstrap" },
+            { name: "Tailwind CSS" },
+            { name: "Framer Motion" },
         ]
     },
     {
@@ -44,11 +44,11 @@ export const SKILLS_CATEGORY = [
         icon: Server,
         description : "Building fast, secure, and scalable systems",
         skills : [
-            { name: "Node.js", level: 75, color: "bg-green-500" },
-            { name: "Express.js", level: 80, color: "bg-gray-400" },
-            { name: "MongoDB", level: 75, color: "bg-emerald-500" },
-            { name: "MySQL", level: 70, color: "bg-orange-500" },
-            { name: "SQL Server", level: 70, color: "bg-red-700" },
+            { name: "Node.js" },
+            { name: "Express.js" },
+            { name: "MongoDB" },
+            { name: "MySQL" },
+            { name: "SQL Server" },
         ]
     },
 ]
@@ -200,13 +200,13 @@ export const SOCIAL_LINKS =[
         color: "hover:text-blue-400",
         bgColor: "hover:bg-blue-500/10",
     },
-    {
-        name: "Email",
-        icon: Mail,
-        url: "Mailto:ibrahem.a.mohamad@gmail.com",
-        color: "hover:text-green-400",
-        bgColor: "hover:bg-green-500/10",
-    }
+    // {
+    //     name: "Email",
+    //     icon: Mail,
+    //     url: "Mailto:ibrahem.a.mohamad@gmail.com",
+    //     color: "hover:text-green-400",
+    //     bgColor: "hover:bg-green-500/10",
+    // }
 ]
 
 export const CONTACT_INFO = [
