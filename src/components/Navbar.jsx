@@ -76,6 +76,8 @@ const Navbar = () => {
             whileHover={{ scale: 1.05}}
             whileTap={{ scale: 0.95}}
             onClick={() => toggleDarkMode(isDarkMode ? "light" : "dark")}
+            aria-label={isDarkMode ? "Switch to light mode" : "Switch to dark mode"}
+            aria-pressed={isDarkMode}
             className={`p-2 rounded-full transition-colors ${
               isDarkMode 
                 ? "text-gray-400 text-white hover:bg-gray-800"  
@@ -94,6 +96,8 @@ const Navbar = () => {
             whileHover={{ scale: 1.05}}
             whileTap={{ scale: 0.95}}
             onClick={() => toggleDarkMode(isDarkMode ? "light" : "dark")}
+            aria-label={isDarkMode ? "Switch to light mode" : "Switch to dark mode"}
+            aria-pressed={isDarkMode}
             className={`p-2 rounded-full transition-colors ${
               isDarkMode
               ? "text-gray-400 text-white hover:bg-gray-800"  
@@ -107,6 +111,9 @@ const Navbar = () => {
             whileHover={{ scale: 1.05}}
             whileTap={{ scale: 0.95}}
             onClick={() => setIsMenuOpen(!isMenuOpen)}
+            aria-label={isMenuOpen ? "Close navigation menu" : "Open navigation menu"}
+            aria-expanded={isMenuOpen}
+            aria-controls="mobile-navigation"
             className={`p-2 rounded-full transition-colors ${
               isDarkMode
                 ? "text-gray-400 hover:text-white hover:bg-gray-800"
@@ -125,6 +132,7 @@ const Navbar = () => {
               initial={{ opacity: 0, y: -20}}
               animate={{ opacity: 1, y: 0}}
               exit={{ opacity: 0, y: -20}}
+              id="mobile-navigation"
               className={`md:hidden mt-4 p-4 rounded-lg ${
                 isDarkMode ? "bg-gray-900" : "bg-white"
               } border ${isDarkMode ? "border-gray-800" : "border-gray-200"}`}

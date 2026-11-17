@@ -28,6 +28,7 @@ const SuccessModel = ({ showSuccess, setShowSuccess, isDarkMode }) => {
         >
           <button
             onClick={() => setShowSuccess(false)}
+            aria-label="Close confirmation"
             className={`absolute top-4 right-4 p-1 rounded-full transition-colors ${
               isDarkMode ? "hover:bg-gray-700" : "hover:bg-gray-100"
             }`}

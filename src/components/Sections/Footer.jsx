@@ -138,6 +138,7 @@ const Footer = () => {
                 <motion.a 
                   key={social.name}
                   href={social.url}
+                  aria-label={social.name}
                   target="_blank"
                   rel="noopener noreferrer"
                   className={`p-3 rounded-full transition-all duration-300 ${

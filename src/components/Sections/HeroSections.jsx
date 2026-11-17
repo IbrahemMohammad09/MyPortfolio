@@ -204,13 +204,14 @@ const HeroSections = () => {
                                 className="flex justify-center space-x-6 mb-8"
                             >
                                 {[
-                                    { icon: FiGithub, href: "https://github.com/IbrahemMohammad09" },
-                                    { icon: FiLinkedin, href: "https://www.linkedin.com/in/ibrahem-mohamad/" },
-                                    { icon: Mail, href: "mailto:ibrahem.a.mohamad@gmail.com" },
+                                    { icon: FiGithub, href: "https://github.com/IbrahemMohammad09", label: "GitHub" },
+                                    { icon: FiLinkedin, href: "https://www.linkedin.com/in/ibrahem-mohamad/", label: "LinkedIn" },
+                                    { icon: Mail, href: "mailto:ibrahem.a.mohamad@gmail.com", label: "Email" },
                                 ].map((social ,index) => (
                                     <motion.a 
                                         key={index}
                                         href={social.href}
+                                        aria-label={social.label}
                                         target={social.href.startsWith("http") ? "_blank" : undefined}
                                         whileHover={{ y: -3, scale: 1.1}}
                                         className={`p-3 rounded-full transition-colors ${
@@ -342,14 +343,15 @@ const HeroSections = () => {
                                 className="flex space-x-6 mb-12"
                             >
                                 {[
-                                    { icon: FiGithub, href: "https://github.com/IbrahemMohammad09" },
-                                    { icon: FiLinkedin, href: "https://www.linkedin.com/in/ibrahem-mohamad/" },
-                                    { icon: Mail, href: "mailto:ibrahem.a.mohamad@gmail.com" },
+                                    { icon: FiGithub, href: "https://github.com/IbrahemMohammad09", label: "GitHub" },
+                                    { icon: FiLinkedin, href: "https://www.linkedin.com/in/ibrahem-mohamad/", label: "LinkedIn" },
+                                    { icon: Mail, href: "mailto:ibrahem.a.mohamad@gmail.com", label: "Email" },
                                 ].map((social, index) =>(
                                     <motion.a
                                         key={index}
                                         target={social.href.startsWith("http") ? "_blank" : undefined}
                                         href={social.href}
+                                        aria-label={social.label}
                                         whileHover={{ y: -3, scale: 1.1}}
                                         className={`p-3 rounded-full transition-colors ${
                                             isDarkMode
