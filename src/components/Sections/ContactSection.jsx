@@ -123,7 +123,7 @@ const ContactSection = () => {
             variants={itemVariants}
             className="text-3xl md:text-5xl font-light mb-6"
           >
-            Get In
+            Get In{" "}
             <span className="text-blue-500 font medium">Touch</span>
           </motion.h2>
 

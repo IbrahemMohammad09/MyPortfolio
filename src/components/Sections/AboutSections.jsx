@@ -93,7 +93,7 @@ const AboutSections = () => {
                     variants={itemVariants}
                     className="text-3xl md:text-5xl font-light mb-6"
                 >
-                    About 
+                    About{" "}
                     <span className="text-blue-500 font-medium">Me</span>
                 </motion.h2>
             </motion.div>
