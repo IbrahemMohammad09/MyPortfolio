@@ -62,21 +62,22 @@ const ProjectCard = ({ project, index, isDarkMode }) => {
             </span>
           </div>
 
-          {/* Hover Overlay with CTA Buttons */}
+          {/* Desktop hover actions */}
           <motion.div
             initial={{ opacity: 0 }}
             whileHover={{ opacity: 1 }}
             transition={{ duration: 0.3 }}
-            className="absolute inset-0 bg-black/60 backdrop-blur-sm flex items-center justify-center space-x-4"
+            className="absolute inset-0 hidden items-center justify-center space-x-4 bg-black/60 backdrop-blur-sm lg:flex"
           >
             <motion.a
               target="_blank"
               rel="noopener noreferrer"
               href={project.liveUrl}
+              aria-label={`Open the live demo for ${project.title}`}
               initial={{ y: 20, opacity: 0.5 }}
-              whileHover={{ y: 0, opacity: 1.05 }}
+              whileHover={{ y: 0, opacity: 1 }}
               transition={{ duration: 0.3, delay: 0.1 }}
-              className="bg-blue-500 hover:bg-blue-600 text-white px-4 py-3 rounded-full flex items-center space-x-2 text-sm font-medium transition-colors"
+              className="flex items-center space-x-2 rounded-full bg-blue-500 px-4 py-3 text-sm font-medium text-white transition-colors hover:bg-blue-600"
             >
               <ExternalLink size={16} />
               <span>Live Demo</span>
@@ -89,7 +90,7 @@ const ProjectCard = ({ project, index, isDarkMode }) => {
               initial={{ y: 20, opacity: 0.5 }}
               whileHover={{ y: 0, opacity: 1 }}
               transition={{ duration: 0.3, delay: 0.15 }}
-              className="border border-white/70 bg-gray-900/70 text-white px-4 py-3 rounded-full flex items-center space-x-2 text-sm font-medium transition-colors hover:bg-gray-800"
+              className="flex items-center space-x-2 rounded-full border border-white/70 bg-gray-900/70 px-4 py-3 text-sm font-medium text-white transition-colors hover:bg-gray-800"
             >
               <FiGithub size={16} />
               <span>View Code</span>
@@ -125,6 +126,33 @@ const ProjectCard = ({ project, index, isDarkMode }) => {
                 {tag}
               </span>
             ))}
+          </div>
+
+          <div className="mt-6 flex justify-center items-center gap-3 lg:hidden">
+            <a
+              href={project.liveUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={`Open the live demo for ${project.title}`}
+              className="inline-flex items-center gap-2 rounded-full bg-blue-500 px-4 py-2.5 text-sm font-medium text-white transition-colors hover:bg-blue-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500"
+            >
+              <ExternalLink size={16} />
+              <span>Live Demo</span>
+            </a>
+            <a
+              href={project.repositoryUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={`View the source code for ${project.title} on GitHub`}
+              className={`inline-flex items-center gap-2 rounded-full border px-4 py-2.5 text-sm font-medium transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500 ${
+                isDarkMode
+                  ? "border-gray-700 text-gray-200 hover:border-gray-500"
+                  : "border-gray-300 text-gray-700 hover:border-gray-500"
+              }`}
+            >
+              <FiGithub size={16} />
+              <span>View Code</span>
+            </a>
           </div>
         </div>
       </div>
