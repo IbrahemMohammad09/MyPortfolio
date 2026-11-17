@@ -191,7 +191,7 @@ export const SOCIAL_LINKS =[
         icon: FiGithub,
         url: "https://github.com/IbrahemMohammad09",
         color: "hover:text-gray-400",
-        bgColor: "hover:bg-gray-800",
+        bgColor: "hover:bg-gray-900",
     },
     {
         name: "LinkedIn",

@@ -48,7 +48,8 @@ const ContactSection = () => {
   const PUBLIC_KEY = "5vJT1QDohQIqCsVh5";
 
 
-  const handleSubmit = async () => {
+  const handleSubmit = async (event) => {
+    event.preventDefault();
     if (isSubmitting) return;
   
     setIsSubmitting(true);
@@ -153,9 +154,12 @@ const ContactSection = () => {
               }`}
             >
               <h3 className="text-2xl font-medium mb-8">Send a message</h3>
-              <div className="space-y-6">
+              <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid md:grid-cols-2 gap-6">
                   <TextInput
+                    id="contact-name"
+                    name="name"
+                    autoComplete="name"
                     isDarkMode={isDarkMode}
                     label="Your Name"
                     value={formData.name}
@@ -165,6 +169,10 @@ const ContactSection = () => {
                     
                   />
                   <TextInput
+                    id="contact-email"
+                    name="email"
+                    type="email"
+                    autoComplete="email"
                     isDarkMode={isDarkMode}
                     label="Email Address"
                     value={formData.email}
@@ -176,6 +184,8 @@ const ContactSection = () => {
                 </div>
 
                 <TextInput
+                    id="contact-message"
+                    name="message"
                     isDarkMode={isDarkMode}
                     label="Your Message"
                     value={formData.message}
@@ -187,12 +197,12 @@ const ContactSection = () => {
                   />
 
                   <motion.button
+                    type="submit"
                     disabled={isSubmitting}
                     whileHover={{ y: -2, scale: 1.02}}
                     whileTap={{ scale: 0.98 }}
                     className="w-full bg-blue-500 hover:bg-blue-600 disabled:bg-blue-400 text-white py-4 rounded-xl text-sm uppercase 
                       tracking-wider font-medium transition-all duration-300 flex items-center justify-center space-x-2 "
-                    onClick={handleSubmit}
                   >
                     {isSubmitting ?(
                       <>
@@ -214,7 +224,7 @@ const ContactSection = () => {
                       </>
                     )}
                   </motion.button>
-              </div>
+              </form>
             </motion.div>
           </motion.div>
 
