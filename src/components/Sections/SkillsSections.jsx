@@ -200,7 +200,7 @@ const SkillsSections = () => {
             initial="hidden"
             animate={isInView ? "visible" : "hidden"}
             variants={containerVariants}
-            className="mt-20 grid grid-cols-2 md:grid-cols-4 gap-8"
+            className="mt-20 grid grid-cols-3  gap-8"
         >
             {STATS.map((stat,index) => (
                 <motion.div

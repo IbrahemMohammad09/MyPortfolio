@@ -79,10 +79,9 @@ export const TECH_STACK = [
 ];
 
 export const STATS = [
-    { number: "10+", label: "Projects Completed"},
+    { number: "8", label: "Projects on GitHub"},
     { number: "3+", label: "Years Experience"},
     { number: "20+", label: "Technologies"},
-    { number: "90%", label: "Client Satisfaction"},
 ]
 
 export const PROJECTS = [
