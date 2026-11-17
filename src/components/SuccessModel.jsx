@@ -59,7 +59,7 @@ const SuccessModel = ({ showSuccess, setShowSuccess, isDarkMode }) => {
             transition={{ delay: 0.4 }}
             className={`${isDarkMode ? "text-gray-400" : "text-gray-600"} mb-6`}
           >
-            Thank you for reaching out! i'll get back to you within 24 hours.
+            Thanks for reaching out. I'll get back to you as soon as I can.
           </motion.p>
 
           <motion.div

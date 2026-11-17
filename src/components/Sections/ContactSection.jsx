@@ -24,6 +24,7 @@ const ContactSection = () => {
   });
   const [showSuccess, setShowSuccess] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [formError, setFormError] = useState("");
 
   const sectionRef = useRef(null);
   const isInView = useInView(sectionRef, {once: true, margin: "-100px"});
@@ -40,6 +41,7 @@ const ContactSection = () => {
       ...formData,
       [key]: value,
     })
+    setFormError("");
   }
 
 
@@ -53,6 +55,7 @@ const ContactSection = () => {
     if (isSubmitting) return;
   
     setIsSubmitting(true);
+    setFormError("");
   
     const templateParams = {
       name: formData.name,
@@ -62,23 +65,19 @@ const ContactSection = () => {
     
   
     try {
-      const response = await emailjs.send(
+      await emailjs.send(
         SERVICE_ID,
         TEMPLATE_ID,
         templateParams,
         PUBLIC_KEY
       );
-      // console.log(templateParams);
-      // console.log("Email sent:", response);
-      alert("Your message has been sent successfully!");
-  
+      setShowSuccess(true);
       setFormData({ name: "", email: "", message: "" });
-    } catch (error) {
-      // console.error("EmailJS Error:", error);
-      alert("Failed to send message. Please try again later.");
+    } catch {
+      setFormError("We couldn't send your message. Please try again or email me directly.");
+    } finally {
+      setIsSubmitting(false);
     }
-  
-    setIsSubmitting(false);
   };
   
 
@@ -195,6 +194,15 @@ const ContactSection = () => {
                     }
                     
                   />
+
+                  {formError && (
+                    <p
+                      role="alert"
+                      className={`text-sm ${isDarkMode ? "text-red-400" : "text-red-600"}`}
+                    >
+                      {formError}
+                    </p>
+                  )}
 
                   <motion.button
                     type="submit"
