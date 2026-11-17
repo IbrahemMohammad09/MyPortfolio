@@ -81,6 +81,19 @@ const ProjectCard = ({ project, index, isDarkMode }) => {
               <ExternalLink size={16} />
               <span>Live Demo</span>
             </motion.a>
+            <motion.a
+              target="_blank"
+              rel="noopener noreferrer"
+              href={project.repositoryUrl}
+              aria-label={`View the source code for ${project.title} on GitHub`}
+              initial={{ y: 20, opacity: 0.5 }}
+              whileHover={{ y: 0, opacity: 1 }}
+              transition={{ duration: 0.3, delay: 0.15 }}
+              className="border border-white/70 bg-gray-900/70 text-white px-4 py-3 rounded-full flex items-center space-x-2 text-sm font-medium transition-colors hover:bg-gray-800"
+            >
+              <FiGithub size={16} />
+              <span>View Code</span>
+            </motion.a>
           </motion.div>
         </div>
 
